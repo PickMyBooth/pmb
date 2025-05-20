@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PickMyBooth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div></div>
+    <div id="startScreen">
+      <img src="1.png" alt=""
+      width="500px">
+    <div>
+    </div>                                                                                          
+    <button id="startBtn">Mulai</button>
+    </div>
+
+    <div id="stripSelection" style="display:none;">
+      <h2>Pilih Jumlah Strip</h2>
+      <button class="stripOption" data-strip="2">2 Strip</button>
+      <button class="stripOption" data-strip="3">3 Strip</button>
+    </div>
+
+    <div id="photoBooth" style="display:none;">
+      <video id="video" autoplay playsinline></video>
+      <button id="snap">Jepret Foto Strip 1</button>
+    </div>
+
+    <div id="previewSection" style="display:none;">
+      <h3>Preview Foto</h3>
+      <div id="result"></div>
+
+      <div>
+        <h4>Pilih Warna Frame</h4>
+        <div class="colorPicker" id="colorPicker">
+          <div class="colorBox" style="background:#FADADD;" data-color="#FADADD"></div>
+          <div class="colorBox" style="background:#C1E1C1;" data-color="#C1E1C1"></div>
+          <div class="colorBox" style="background:#A3CEF1;" data-color="#A3CEF1"></div>
+          <div class="colorBox" style="background:#FCE1E4;" data-color="#FCE1E4"></div>
+          <div class="colorBox" style="background:#D6CDEA;" data-color="#D6CDEA"></div>
+          <div class="colorBox" style="background:#333333;" data-color="#333333"></div>
+          <div class="colorBox" style="background:#666666;" data-color="#666666"></div>
+          <div class="colorBox" style="background:#999999;" data-color="#999999"></div>
+          <div class="colorBox" style="background:#CCCCCC;" data-color="#CCCCCC"></div>
+          <div class="colorBox" style="background:#FFFFFF; border: 2px solid #999;" data-color="#FFFFFF"></div>
+        </div>
+      </div>
+
+      <a id="download" href="#" download="PickMyBooth.png">Unduh Foto</a>
+      <br />
+      <button id="retryBtn">Ulang Jepret Foto</button>
+    </div>
+
+    <canvas id="canvas" style="display:none;"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
